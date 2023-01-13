@@ -1,0 +1,34 @@
+IGO Ideas:
+
+1. General (All Tilesets)
+- Food, Gems, Coins, Shop, Dyes
+
+- Trampolines
+- Creates (hiding items, trampolines - should they be movable?)
+
+- Warriors
+- Casters
+- Powerful Warriors
+- Veteran Casters
+- Elementals
+- Sturdy Elementals
+
+2. One Tileset
+
+a) Verdant
+
+b) Water
+
+c) Fire
+
+d) Electric
+
+e) Wind
+
+f) Ground
+
+g) Lifeforce
+
+h) Ice
+
+3. Multiple Tilesets [listed]

@@ -1,0 +1,32 @@
+#ifndef _STATE_MAIN_MENU_H_
+#define _STATE_MAIN_MENU_H_
+
+#include "app.h"
+#include "gui_buttons_layout.h"
+#include "chromatic_sprite.h"
+
+class State_Main_Menu final : public State
+{
+private:
+
+	GUI_Buttons_Layout<App&> buttons;
+	Chromatic_Sprite logo;
+
+	State_Main_Menu(App& arg_app_handle);
+
+public:
+
+	void handle_events(const sf::Event& event) override;
+	void update(const sf::Time& dt) override;
+	void render() override;
+	void adjust_to_resolution() override;
+
+	constexpr bool request_previous_render() override;
+	constexpr bool uses_menu_background() override;
+	constexpr bool uses_dark_sheet() override;
+
+	static State* make_state(App& app_handle);
+
+};
+
+#endif // _STATE_MAIN_MENU_H_
