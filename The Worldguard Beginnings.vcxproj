@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b63555f8-9771-4858-9006-e30fbb955140}</ProjectGuid>
+    <RootNamespace>TheWorldguardBeginnings</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\SFML\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <FloatingPointModel>Precise</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\SFML\SFML-2.5.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-system.lib;sfml-window.lib;sfml-audio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\advanced_components.h" />
+    <ClInclude Include="source\animatable_sprite.h" />
+    <ClInclude Include="source\animations.h" />
+    <ClInclude Include="source\app.h" />
+    <ClInclude Include="source\ball.h" />
+    <ClInclude Include="source\basic_components.h" />
+    <ClInclude Include="source\boomerang.h" />
+    <ClInclude Include="source\bubble.h" />
+    <ClInclude Include="source\bullet.h" />
+    <ClInclude Include="source\camera.h" />
+    <ClInclude Include="source\chromatic_sprite.h" />
+    <ClInclude Include="source\config_manager.h" />
+    <ClInclude Include="source\controls_manager.h" />
+    <ClInclude Include="source\cursor_highlight.h" />
+    <ClInclude Include="source\gui_buttons_layout.h" />
+    <ClInclude Include="source\gui_campaign_level_list.h" />
+    <ClInclude Include="source\gui_dialogue_box.h" />
+    <ClInclude Include="source\gui_text_field.h" />
+    <ClInclude Include="source\gui_user_level_list.h" />
+    <ClInclude Include="source\hct\deck.h" />
+    <ClInclude Include="source\hct\dynarray.h" />
+    <ClInclude Include="source\hct\queue.h" />
+    <ClInclude Include="source\hct\rng.h" />
+    <ClInclude Include="source\hct\scope_guard.h" />
+    <ClInclude Include="source\hct\sort.h" />
+    <ClInclude Include="source\hct\stack.h" />
+    <ClInclude Include="source\ice_chunk.h" />
+    <ClInclude Include="source\level_background.h" />
+    <ClInclude Include="source\level_content.h" />
+    <ClInclude Include="source\level_object_id.h" />
+    <ClInclude Include="source\lo_bases.h" />
+    <ClInclude Include="source\lo_entities.h" />
+    <ClInclude Include="source\lo_items.h" />
+    <ClInclude Include="source\lo_tiles.h" />
+    <ClInclude Include="source\music_manager.h" />
+    <ClInclude Include="source\player.h" />
+    <ClInclude Include="source\player_interface.h" />
+    <ClInclude Include="source\resources.h" />
+    <ClInclude Include="source\rock.h" />
+    <ClInclude Include="source\sfx_manager.h" />
+    <ClInclude Include="source\state.h" />
+    <ClInclude Include="source\state_campaign.h" />
+    <ClInclude Include="source\state_error.h" />
+    <ClInclude Include="source\state_gameplay.h" />
+    <ClInclude Include="source\state_game_over.h" />
+    <ClInclude Include="source\state_lcos_entity.h" />
+    <ClInclude Include="source\state_lcos_item.h" />
+    <ClInclude Include="source\state_lcos_tile.h" />
+    <ClInclude Include="source\state_level_creator.h" />
+    <ClInclude Include="source\state_level_creator_alert.h" />
+    <ClInclude Include="source\state_level_creator_create.h" />
+    <ClInclude Include="source\state_level_creator_edit.h" />
+    <ClInclude Include="source\state_level_creator_remove.h" />
+    <ClInclude Include="source\state_level_creator_select.h" />
+    <ClInclude Include="source\state_main_menu.h" />
+    <ClInclude Include="source\state_mode_select.h" />
+    <ClInclude Include="source\state_pause.h" />
+    <ClInclude Include="source\state_settings.h" />
+    <ClInclude Include="source\state_settings_audio.h" />
+    <ClInclude Include="source\state_settings_controls.h" />
+    <ClInclude Include="source\state_settings_progress_reset.h" />
+    <ClInclude Include="source\state_settings_video.h" />
+    <ClInclude Include="source\state_user_level_select.h" />
+    <ClInclude Include="source\state_victory.h" />
+    <ClInclude Include="source\timer.h" />
+    <ClInclude Include="source\utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\animatable_sprite.cpp" />
+    <ClCompile Include="source\animations.cpp" />
+    <ClCompile Include="source\app.cpp" />
+    <ClCompile Include="source\ball.cpp" />
+    <ClCompile Include="source\basic_components.cpp" />
+    <ClCompile Include="source\boomerang.cpp" />
+    <ClCompile Include="source\bubble.cpp" />
+    <ClCompile Include="source\bullet.cpp" />
+    <ClCompile Include="source\camera.cpp" />
+    <ClCompile Include="source\chromatic_sprite.cpp" />
+    <ClCompile Include="source\config_manager.cpp" />
+    <ClCompile Include="source\controls_manager.cpp" />
+    <ClCompile Include="source\cursor_highlight.cpp" />
+    <ClCompile Include="source\gui_campaign_level_list.cpp" />
+    <ClCompile Include="source\gui_text_field.cpp" />
+    <ClCompile Include="source\gui_user_level_list.cpp" />
+    <ClCompile Include="source\ice_chunk.cpp" />
+    <ClCompile Include="source\level_background.cpp" />
+    <ClCompile Include="source\level_content.cpp" />
+    <ClCompile Include="source\level_object_id.cpp" />
+    <ClCompile Include="source\lo_bases.cpp" />
+    <ClCompile Include="source\lo_entities.cpp" />
+    <ClCompile Include="source\lo_items.cpp" />
+    <ClCompile Include="source\lo_tiles.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\music_manager.cpp" />
+    <ClCompile Include="source\player.cpp" />
+    <ClCompile Include="source\player_interface.cpp" />
+    <ClCompile Include="source\resources.cpp" />
+    <ClCompile Include="source\rock.cpp" />
+    <ClCompile Include="source\sfx_manager.cpp" />
+    <ClCompile Include="source\state.cpp" />
+    <ClCompile Include="source\state_campaign.cpp" />
+    <ClCompile Include="source\state_error.cpp" />
+    <ClCompile Include="source\state_gameplay.cpp" />
+    <ClCompile Include="source\state_game_over.cpp" />
+    <ClCompile Include="source\state_lcos_entity.cpp" />
+    <ClCompile Include="source\state_lcos_item.cpp" />
+    <ClCompile Include="source\state_lcos_tile.cpp" />
+    <ClCompile Include="source\state_level_creator.cpp" />
+    <ClCompile Include="source\state_level_creator_alert.cpp" />
+    <ClCompile Include="source\state_level_creator_create.cpp" />
+    <ClCompile Include="source\state_level_creator_edit.cpp" />
+    <ClCompile Include="source\state_level_creator_remove.cpp" />
+    <ClCompile Include="source\state_level_creator_select.cpp" />
+    <ClCompile Include="source\state_main_menu.cpp" />
+    <ClCompile Include="source\state_mode_select.cpp" />
+    <ClCompile Include="source\state_pause.cpp" />
+    <ClCompile Include="source\state_settings.cpp" />
+    <ClCompile Include="source\state_settings_audio.cpp" />
+    <ClCompile Include="source\state_settings_controls.cpp" />
+    <ClCompile Include="source\state_settings_progress_reset.cpp" />
+    <ClCompile Include="source\state_settings_video.cpp" />
+    <ClCompile Include="source\state_user_level_select.cpp" />
+    <ClCompile Include="source\state_victory.cpp" />
+    <ClCompile Include="source\timer.cpp" />
+    <ClCompile Include="source\utility.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\VisualLeakDetector.2.5.0.0\build\native\VisualLeakDetector.targets" Condition="Exists('packages\VisualLeakDetector.2.5.0.0\build\native\VisualLeakDetector.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ten projekt zawiera odwołania do pakietów NuGet, których nie ma na tym komputerze. Użyj przywracania pakietów NuGet, aby je pobrać. Aby uzyskać więcej informacji, zobacz http://go.microsoft.com/fwlink/?LinkID=322105. Brakujący plik: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\VisualLeakDetector.2.5.0.0\build\native\VisualLeakDetector.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\VisualLeakDetector.2.5.0.0\build\native\VisualLeakDetector.targets'))" />
+  </Target>
+</Project>
